@@ -5,7 +5,7 @@
 ### Summary
  <a href="https://www.linkedin.com/in/sven-schaper/" style="text-align: right"><img align="right" src="https://www.lime-anchor.com/img/connect.png" height="250"></a><br>
 
-**Go Properties** is a property file loader for go without additional dependency to not core golang projects.
+**Go Properties** is a property file loader for golang projects without any additional dependency except golang core components.
 At the moment the property loader is able to open configuration files and read key value pairs. More complex structures like arrays or nested objects are not supported yet but will be extended soon. The property loader provides a method to check a named property inside a file. The property file itlsef will be initialized as a singelton.
 
 ### Set Up
@@ -33,7 +33,7 @@ func init() {
     if err != nil {
         fmt.Errorf(err.Error())
     }
-	prop = prop2
+	prop = p
 }
 
 func yourFunction(){
@@ -45,11 +45,6 @@ func yourFunction(){
 
 
 
-
-
-<br>
-<br>
-<br>
 <br>
 <br>
 
